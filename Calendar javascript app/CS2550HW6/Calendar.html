@@ -1,0 +1,73 @@
+<!DOCTYPE html">
+
+    <head>
+        
+        <title>Astronomy Calendar</title>
+        <link rel="stylesheet" type="text/css" href="calendar.css" />
+        
+        <script type="text/javascript" src="calendar.js"></script>
+        <script type="text/javascript" src="model.js"></script>
+        <script type="text/javascript" src="login.js"></script>
+        <script type ="text/javascript" src="resources/event.js"></script>
+          
+    </head>
+    <body>
+         <div>
+            <br>
+            <p id = "postdemo">
+                
+            </p>
+            
+        </div>
+      <video width="320" height="240" controls>
+ 
+  <source src="Movie.ogg" type="video/ogg">
+Your browser does not support the video tag.
+</video>
+            <p id = "loginInfo"></p>
+            <button id="ClearStorage" onclick="clearStorage()">Clear Local Storage</button>
+        </div>
+      <div>
+<p id = "predemo"></p>
+
+
+<table id="demo" border=0 style = "width:100%">
+</table>
+
+<!--table id='myTable'border=0 width=100%></table>-->
+
+
+        <script type="text/javascript">
+          calendar();
+          
+        </script>
+      </div>
+        <div>
+     <div>
+        <button type="button" id = "prevMonth" onclick="prevMonthfunc()">Prev Month</button>
+        </div>
+      <div>
+        <button type="button" id = "nextMonth" onclick="nextMonthfunc()">Next Month</button>
+        </div>
+
+
+</a>
+
+        
+       
+        </div>
+        
+    
+<script>
+//var text = '{"employees":[' +
+//'{"firstName":"John","lastName":"Doe" },' +
+//'{"firstName":"Anna","lastName":"Smith" },' +
+//'{"firstName":"Peter","lastName":"Jones" }]}';
+
+//obj = JSON.parse(text);
+//document.getElementById("postdemo").innerHTML =
+//obj.employees[0].firstName + " " + obj.employees[0].lastName;
+</script>
+       
+    </body>
+</html>

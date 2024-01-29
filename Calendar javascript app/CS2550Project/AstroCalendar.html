@@ -1,0 +1,132 @@
+<!--Michelle Spencer CS2550-->
+<!DOCTYPE html>
+    <html>
+    <head>
+
+    
+        <title> Calendar for Astronomers Project</title>
+        <link rel="stylesheet" href="style.css">
+        <h1>JULY</h1>
+        
+    </head>
+    <body>
+     
+     <table border = "2" cellpadding = 2 >
+    <tr style="height:40px">
+        <th>Sunday</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+    </tr>
+    <tr align="center" style="position: relative; height: 100px; vertical-align: top;">
+        <td style = "color:DimGray;background-color:Gainsboro">26</td>
+        <td style = "color:DimGray;background-color:Gainsboro">27</td>
+        <td style = "color:DimGray;background-color:Gainsboro">28</td>
+        <td style = "color:DimGray;background-color:Gainsboro">29</td>
+        <td style = "color:DimGray;background-color:Gainsboro">30</td>
+        <td style = "color:Black;background-color:AntiqueWhite">
+            1<br>
+            Sunrise: 6:00am<br>
+            Sunset: 9:03pm<br>
+        </td>
+        <td style = "color:Black;background-color:AntiqueWhite">2</td>
+    </tr>
+    <tr align="center">
+        <td style = "color:Black;background-color:AntiqueWhite">3</td>
+        <td style = "color:Black;background-color:AntiqueWhite">
+            4 <br>
+           <img src="NewMoon.jpg" width="20" height="20" alt="New Moon" style = "position:relative; left:40%"> <br>
+           Independence Day!
+        
+        </td>
+        <td style = "color:Black;background-color:AntiqueWhite">5</td>
+        <td style = "color:Black;background-color:AntiqueWhite">6</td>
+        <td style = "color:Black;background-color:AntiqueWhite">7</td>
+        <td style = "color:Black;background-color:AntiqueWhite">
+            8 <br>
+            <img src="WaxingCrescent.jpg" width="20" height="20" alt="Waxing Crescent" style = "position:relative; left:40%">
+        </td>
+        <td style = "color:Black;background-color:AntiqueWhite">9</td>
+    </tr>
+    <tr align="center">
+        <td style = "color:Black;background-color:AntiqueWhite">10</td>
+        <td style = "color:Black;background-color:AntiqueWhite">11</td>
+        <td style = "color:Black;background-color:AntiqueWhite">
+            12 <br>
+        <img src="FirstQuarter.jpg" width="20" height="20" alt="First Quarter" style = "position:relative; left:40%">
+        </td>
+        <td style = "color:Black;background-color:AntiqueWhite">13</td>
+        <td style = "color:Black;background-color:AntiqueWhite">14</td>
+        <td style = "color:Black;background-color:AntiqueWhite">15</td>
+        <td style = "color:Black;background-color:AntiqueWhite">16</td>
+    </tr>
+    <tr align="center" style="height:100px">
+        <td style = "color:Black;background-color:AntiqueWhite">17</td>
+        <td style = "color:Black;background-color:AntiqueWhite">
+            18 <br>
+            Dentist appt. 9:00 a.m.
+        </td>
+        <td style = "color:Black;background-color:AntiqueWhite">19</td>
+        <td style = "color:Black;background-color:AntiqueWhite">
+            20 <br>
+            <img src="FullMoon.jpg" width="20" height="20" alt="Full Moon" style = "position:relative; left:40%">
+        </td>
+        <td style = "color:Black;background-color:AntiqueWhite">21</td>
+        <td style = "color:Black;background-color:AntiqueWhite">22</td>
+        <td style = "color:Black;background-color:AntiqueWhite">
+            23 <br>
+        <img src="WaningGibbous.jpg" width="20" height="20" alt="Waning Gibbous" style = "position:relative; left:40%">
+        </td>
+    </tr>
+    <tr align="center" style="height:100px">
+        <td style = "color:Black;background-color:AntiqueWhite">24</td>
+        <td style = "color:Black;background-color:AntiqueWhite">
+            25 <br>
+            Business Meeting 2:00 p.m.
+        </td>
+        <td style = "color:Black;background-color:AntiqueWhite">26</td>
+        <td style = "color:Black;background-color:AntiqueWhite">
+            27 <br>
+        <img src="LastQuarter.jpg" width="20" height="20" alt="Last Quarter" style = "position:relative; left:40%">
+        </td>
+        <td style = "color:Black;background-color:AntiqueWhite">28</td>
+        <td style = "color:Black;background-color:AntiqueWhite">29</td>
+        <td style = "color:Black;background-color:AntiqueWhite">30</td>
+    </tr>
+    <tr align="center" style="height:100px">
+        <td style = "color:Black;background-color:AntiqueWhite">31</td>
+        <td style = "color:DimGray;background-color:Gainsboro">1</td>
+        <td style = "color:DimGray;background-color:Gainsboro">2</td>
+        <td style = "color:DimGray;background-color:Gainsboro">3</td>
+        <td style = "color:DimGray;background-color:Gainsboro">4</td>
+        <td style = "color:DimGray;background-color:Gainsboro">5</td>
+        <td style = "color:DimGray;background-color:Gainsboro">6</td>
+    </tr>
+    </table>
+
+<form action="processingscript.php" method="post" >
+<input type="submit" value="Prev">
+
+<input type="submit" value="Next" style = "position:relative; left:93%">
+</form>
+
+<form action="processingscript.php" method="post" >
+
+
+<input type="button" value="Create New Event" align = "center">
+</form>
+
+<div style = "background-color:LightGray; width:30%">
+    <h3> Legend </h3>
+    <img src="FullMoon.jpg" width="10" height="10" alt="Full Moon"> - Full Moon <br>
+    <img src="WaningGibbous.jpg" width="10" height="10" alt="Waning Gibbous"> - Waning Gibbous <br>
+    <img src="LastQuarter.jpg" width="10" height="10" alt="Last Quarter"> - Last Quarter <br>
+    <img src="WaningCrescent.jpg" width="10" height="10" alt="Waning Crescent"> - Waning Crescent <br>
+    <img src="NewMoon.jpg" width="10" height="10" alt="New Moon"> - New Moon <br>
+    <img src="WaxingCrescent.jpg" width="10" height="10" alt="Waxing Crescent"> - Waxing Crescent <br>
+    <img src="FirstQuarter.jpg" width="10" height="10" alt="First Quarter"> - First Quarter <br>
+    <img src="WaxingGibbous.jpg" width="10" height="10" alt="Waxing Gibbous"> - Waxing Gibbous <br>
+</div>

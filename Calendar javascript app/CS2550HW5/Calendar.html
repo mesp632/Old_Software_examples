@@ -1,0 +1,50 @@
+<!DOCTYPE html">
+
+    <head>
+        
+        <title>Astronomy Calendar</title>
+        <link rel="stylesheet" type="text/css" href="calendar.css" />
+        
+        <script type="text/javascript" src="calendar.js"></script>
+        <script type="text/javascript" src="model.js"></script>
+        <script type="text/javascript" src="login.js"></script>
+    </head>
+    <body>
+        <div>
+            <p id = "loginInfo"></p>
+            <button id="ClearStorage" onclick="clearStorage()">Clear Local Storage</button>
+        </div>
+      <div>
+<p id = "predemo"></p>
+
+<table id="demo" border=0 width=100%>
+</table>
+
+<!--table id='myTable'border=0 width=100%></table>-->
+
+
+        <script type="text/javascript">
+          calendar();
+          
+        </script>
+      </div>
+        <div>
+      <a id="owl" href="#" style = "left:auto">
+<img id="sun" src="Sun.png" alt="sun" />
+<!--img id="bod" src="owl.png" alt="Owl" />
+<img id="rt" class="wing" src="rt-wing.png" alt="Right Wing" />
+<img id="lt" class="wing" src="lt-wing.png" alt="Left Wing" />
+<img id="eyes" src="eyes.gif" alt="Eyes" />-->
+</a>
+
+        
+        <p id = "sunrise">
+          
+        </p>
+            <p id = "sunset" style = "position:absolute; left:50%; top:203%" >
+          
+        </p>
+        </div>
+       
+    </body>
+</html>

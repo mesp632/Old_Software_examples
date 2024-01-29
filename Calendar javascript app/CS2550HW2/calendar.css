@@ -1,0 +1,38 @@
+.main_calendar
+{
+        border:1px;
+        padding:1px;
+        background-color:DarkGray;
+        width:1000px;
+        margin:auto;
+        height:300px;
+    
+}
+.main_calendar th
+{
+        border:1px solid black;
+        background-color:BurlyWood;
+                width:100px;
+}
+.main_calendar td
+{
+        border:1px solid black;
+        background-color:AntiqueWhite;
+        text-align:center;
+        position: relative;
+        vertical-align: top;
+                width:100px;
+                height:100px;
+}
+.highlightToday
+{
+        
+        color:Brown;
+                
+}
+.outsideMonthDays
+{
+    
+        color:LightGray;
+}
+
