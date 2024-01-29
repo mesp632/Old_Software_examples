@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="700.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="softwareiiproject.AppointmentsController">
+<children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <AnchorPane layoutX="14.0" layoutY="6.0" prefHeight="554.0" prefWidth="553.0">
+         <children>
+            <TableView fx:id="ApptsTable" layoutX="14.0" layoutY="19.0" prefHeight="520.0" prefWidth="234.0">
+              <columns>
+                <TableColumn fx:id="ApptID" prefWidth="25.0" text="ID">
+                    
+                </TableColumn>
+                <TableColumn fx:id="StartDateTime" prefWidth="153.0" text="Date/Time">
+               
+                </TableColumn>
+              </columns>
+            </TableView>
+            <GridPane>
+            <Button fx:id="month" text="Month" onAction="#MonthView"/>
+            <Button fx:id="week" text="Week" onAction="#WeekView" GridPane.columnIndex="2"/>
+            </GridPane>
+            <GridPane layoutX="269.0" layoutY="17.0" prefHeight="535.0" prefWidth="300.0">
+
+               <children>
+                <Label fx:id="ApptsTitle" text="Appointments" GridPane.rowIndex="0"/>
+                <Label fx:id="ApptIDLabel" text="Appt ID" GridPane.rowIndex="1"/>
+                <TextField fx:id="ApptIDField" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+                <Label fx:id="CustomerIDLabel" text="Customer ID" GridPane.rowIndex="2"/>
+                <TextField fx:id="CustomerIDField" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+                <Label fx:id="UserIDLabel" text="User ID" GridPane.rowIndex="3"/>
+                <TextField fx:id="UserIDField" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+                <Label fx:id="TitleLabel" text="Title" GridPane.rowIndex="4"/>
+                <TextField fx:id="TitleField" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+                <Label fx:id="DescriptionLabel" text="Description" GridPane.rowIndex="5"/>
+                <TextField fx:id="DescriptionText" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+                <Label fx:id="TypeLabel" text="type" GridPane.rowIndex="6"/>
+                <TextField fx:id="TypeField" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+
+                <Label fx:id="DateLabel" text="Date" GridPane.rowIndex="7"/>
+                <TextField fx:id="DateField" GridPane.columnIndex="1" GridPane.rowIndex="7"/>
+                <Text fx:id="DatePattern" text="MM/DD/YYYY" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                        <font >
+                            <Font size="8.0" />
+                        </font>
+                </Text>
+
+                <Label fx:id="StartLabel" text="Time" GridPane.rowIndex="8"/>
+                <TextField fx:id="StartField" GridPane.columnIndex="1" GridPane.rowIndex="8"/>
+                <Text fx:id="StartPattern" text="HH:MM between 08:00-15:59:" GridPane.columnIndex="2" GridPane.rowIndex="8">
+                    <font >
+                            <Font size="8.0" />
+                        </font>
+                </Text>
+
+                <Label fx:id="ApptLengthLabel" text="Length" GridPane.rowIndex="9"/>
+                <TextField fx:id="ApptLengthField" GridPane.columnIndex="1" GridPane.rowIndex="9"/>
+                <Text fx:id="LengthPattern" text="minutes between 15-60" GridPane.columnIndex="2" GridPane.rowIndex="9">
+                            <font >
+                            <Font size="8.0" />
+                        </font>
+                </Text>
+
+                <Button fx:id="AddAppt" text="Add Appointment" GridPane.rowIndex="10" onAction="#addAppointment"/>
+                <Label fx:id="ErrorNotice" GridPane.rowIndex="10" GridPane.columnIndex="1" GridPane.columnSpan="2"/>
+                <Label fx:id="EditApptLabel" text="Edit Appointment" GridPane.rowIndex="11" GridPane.columnSpan = "2"/>
+                 <Label fx:id="EditApptsTitle" text="Appointments" GridPane.rowIndex="12"/>
+                <Label fx:id="EditApptIDLabel" text="Appt ID" GridPane.rowIndex="13"/>
+                <TextField fx:id="EditApptIDField" GridPane.columnIndex="1" GridPane.rowIndex="13"/>
+                <Label fx:id="EditCustomerIDLabel" text="Customer ID" GridPane.rowIndex="14"/>
+                <TextField fx:id="EditCustomerIDField" GridPane.columnIndex="1" GridPane.rowIndex="14"/>
+                <Label fx:id="EditUserIDLabel" text="User ID" GridPane.rowIndex="15"/>
+                <TextField fx:id="EditUserIDField" GridPane.columnIndex="1" GridPane.rowIndex="15"/>
+                <Label fx:id="EditTitleLabel" text="Title" GridPane.rowIndex="16"/>
+                <TextField fx:id="EditTitleField" GridPane.columnIndex="1" GridPane.rowIndex="16"/>
+                <Label fx:id="EditDescriptionLabel" text="Description" GridPane.rowIndex="17"/>
+                <TextField fx:id="EditDescriptionText" GridPane.columnIndex="1" GridPane.rowIndex="17"/>
+                <Label fx:id="EditTypeLabel" text="type" GridPane.rowIndex="18"/>
+                <TextField fx:id="EditTypeField" GridPane.columnIndex="1" GridPane.rowIndex="18"/>
+
+                <Label fx:id="EditDateLabel" text="Date" GridPane.rowIndex="19"/>
+                <TextField fx:id="EditDateField" GridPane.columnIndex="1" GridPane.rowIndex="19"/>
+                <Text fx:id="EditDatePattern" text="MM/DD/YYYY" GridPane.columnIndex="2" GridPane.rowIndex="19">
+                        <font >
+                            <Font size="8.0" />
+                        </font>
+                </Text>
+
+                <Label fx:id="EditStartLabel" text="Time" GridPane.rowIndex="20"/>
+                <TextField fx:id="EditStartField" GridPane.columnIndex="1" GridPane.rowIndex="20"/>
+                <Text fx:id="EditStartPattern" text="HH:MM between 00:00-23:59" GridPane.columnIndex="2" GridPane.rowIndex="20">
+                    <font >
+                            <Font size="8.0" />
+                        </font>
+                </Text>
+
+                <Label fx:id="EditApptLengthLabel" text="Length" GridPane.rowIndex="21"/>
+                <TextField fx:id="EditApptLengthField" GridPane.columnIndex="1" GridPane.rowIndex="21"/>
+                <Text fx:id="EditLengthPattern" text="minutes between 15-60" GridPane.columnIndex="2" GridPane.rowIndex="21">
+                            <font >
+                            <Font size="8.0" />
+                        </font>
+                </Text>
+
+                <Button fx:id="EditAppt" text="Edit Appointment" GridPane.rowIndex="22" onAction="#editAppointment"/>
+                <Button fx:id="DelteAppt" text="Delete Appointment" GridPane.rowIndex="22" GridPane.columnIndex="1" onAction="#deleteAppointment"/>
+                <Label fx:id="EditErrorNotice" GridPane.rowIndex="23" GridPane.columnSpan="2"/>
+                
+                <Button fx:id="ApptTypesLog" text="Type Log" GridPane.rowIndex="24" onAction="#generateTypeLog"/>
+                <Button fx:id="AvailableConsulants" text="Consultants" GridPane.rowIndex="24" GridPane.columnIndex="1" onAction="#generateConsultantIDs"/>
+                <Label fx:id="ConsultantIDLabel" text="Consultant ID" GridPane.rowIndex="25"/>
+                <TextField fx:id="ConsultantID" GridPane.rowIndex="25" GridPane.columnIndex="1"/>
+                <Button fx:id="ConsultantSchedules" text="Schedule" GridPane.rowIndex="25" GridPane.columnIndex="2" onAction="#apptByConsultant"/>
+                
+    
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>

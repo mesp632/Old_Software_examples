@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9.0.1" fx:controller="c195guidatetime.DateTimeController">
+   <children>
+      <DatePicker fx:id="datePicker" layoutX="133.0" layoutY="95.0" />
+      <ComboBox fx:id="cboHour" layoutX="133.0" layoutY="175.0" prefHeight="26.0" prefWidth="101.0" />
+      <ComboBox fx:id="cboMin" layoutX="268.0" layoutY="175.0" prefHeight="26.0" prefWidth="102.0" />
+   </children>
+</AnchorPane>

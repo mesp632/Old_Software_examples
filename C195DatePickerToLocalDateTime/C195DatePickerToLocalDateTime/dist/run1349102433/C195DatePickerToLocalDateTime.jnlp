@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="C195DatePickerToLocalDateTime.jnlp">
+  <information>
+    <title>C195DatePickerToLocalDateTime</title>
+    <vendor>amy.antonucci</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="C195DatePickerToLocalDateTime.jar" size="4915" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="C195DatePickerToLocalDateTime" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="c195datepickertolocaldatetime.C195DatePickerToLocalDateTime"  name="C195DatePickerToLocalDateTime" />
+  <update check="always"/>
+</jnlp>

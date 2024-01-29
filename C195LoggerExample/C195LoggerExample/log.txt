@@ -1,0 +1,16 @@
+Jul 11, 2018 1:57:59 PM c195loggerexample.C195LoggerExample main
+SEVERE: Oh no! Bad Things are happening!
+Jul 11, 2018 1:57:59 PM c195loggerexample.C195LoggerExample main
+SEVERE: More Severe things are happening!
+Jul 11, 2018 1:57:59 PM c195loggerexample.C195LoggerExample main
+WARNING: This is just a warning
+Jul 11, 2018 1:57:59 PM c195loggerexample.C195LoggerExample main
+WARNING: Here is another warning
+Jul 11, 2018 1:57:59 PM c195loggerexample.C195LoggerExample main
+INFO: This message is informational
+Jul 11, 2018 1:57:59 PM c195loggerexample.C195LoggerExample main
+INFO: So is this one
+Jul 11, 2018 1:57:59 PM c195loggerexample.C195LoggerExample main
+CONFIG: Something needs to be reconfigured
+Jul 11, 2018 1:57:59 PM c195loggerexample.C195LoggerExample main
+CONFIG: Something else needs to be reconfigured

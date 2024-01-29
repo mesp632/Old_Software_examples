@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="softwareiiproject.CustomerRecordsController">
+<children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <AnchorPane layoutX="14.0" layoutY="6.0" prefHeight="554.0" prefWidth="553.0">
+         <children>
+            <TableView fx:id="custTable" layoutX="14.0" layoutY="19.0" prefHeight="520.0" prefWidth="234.0">
+              <columns>
+                <TableColumn fx:id="custID" prefWidth="94.0" text="Customer ID">
+                    
+                </TableColumn>
+                <TableColumn fx:id="custTableName" prefWidth="153.0" text="Name">
+               
+                </TableColumn>
+              </columns>
+            </TableView>
+            <GridPane layoutX="269.0" layoutY="17.0" prefHeight="535.0" prefWidth="276.0">
+
+               <children>
+                  <Label fx:id="addCustomerText" text="Add New Customer" GridPane.rowIndex="0"/>
+                  <Label fx:id="idLabel" text="Customer ID:" GridPane.rowIndex="1" />
+                  <Label fx:id="nameLabel" text="Customer Name:" GridPane.rowIndex="2" />
+                  <Label fx:id="addressID" text="Address ID" GridPane.rowIndex="3"/>
+                  <Label fx:id="addressLabel" text="Address1:" GridPane.rowIndex="4" />
+                  <Label fx:id="zipLabel" text="Zip Code:" GridPane.rowIndex="5" />
+                  <Label fx:id="selectCountry" text="Select Country" GridPane.rowIndex="6"/>
+                  <Label fx:id="phoneLabel" text="Phone:" GridPane.rowIndex="8"/>
+                  <Label fx:id="SelectCity" text="Select City" GridPane.rowIndex="7"/>
+                  <TextField fx:id="idText" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="nameText" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField fx:id="addressIDText" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+                  <TextField fx:id="addressText" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <TextField fx:id="zipText" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <ChoiceBox fx:id="countryOptions" GridPane.columnIndex="1" GridPane.rowIndex="6" onAction="#SelectCountry"/>
+                  <ChoiceBox fx:id="cityOptions" GridPane.columnIndex="1" GridPane.rowIndex="7" onAction="#SelectCity"/>
+                  <TextField fx:id="phoneText" GridPane.columnIndex="1" GridPane.rowIndex="8"/>
+                  <Button fx:id="addCustomer" text="Add Customer" GridPane.columnIndex="1" GridPane.rowIndex="10" onAction="#addCustomer"/>
+
+               </children>
+               <children>
+                  <Label fx:id="UpdateDelCustInfo" text="Update/Delete Customer Information" GridPane.rowIndex="12" GridPane.columnSpan="2"/>
+                  <Label fx:id="idLabel2" text="Customer ID:" GridPane.rowIndex="13" />
+                  <Label fx:id="nameLabel2" text="Customer Name:" GridPane.rowIndex="14" />
+                  <Label fx:id="addressID2" text="Address ID" GridPane.rowIndex="15"/>
+                  <Label fx:id="addressLabel2" text="Address1:" GridPane.rowIndex="16" />
+                  <Label fx:id="zipLabel2" text="Zip Code:" GridPane.rowIndex="17" />
+                  <Label fx:id="phoneLabel2" text="Phone:" GridPane.rowIndex="18"/>
+                  <TextField fx:id="idText2" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+                  <TextField fx:id="nameText2" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+                  <TextField fx:id="addressIDText2" GridPane.columnIndex="1" GridPane.rowIndex="15"/>
+                  <TextField fx:id="addressText2" GridPane.columnIndex="1" GridPane.rowIndex="16" />
+                  <TextField fx:id="zipText2" GridPane.columnIndex="1" GridPane.rowIndex="17" />
+                  <TextField fx:id="phoneText2" GridPane.columnIndex="1" GridPane.rowIndex="18"/>
+                  <Label fx:id="selectCountry2" text="Select Country" GridPane.rowIndex="19"/>
+                  <ChoiceBox fx:id="countryOptions2" GridPane.columnIndex="1" GridPane.rowIndex="19" onAction="#SelectCountry2"/>
+                  <ChoiceBox fx:id="cityOptions2" GridPane.columnIndex="1" GridPane.rowIndex="20" onAction="#SelectCity"/>
+                  <Button fx:id="deleteCustomer" text="Delete Customer" GridPane.columnIndex="1" GridPane.rowIndex="22" onAction="#deleteCustomer"/>
+                  <Button fx:id="updateCustomer" text="Update Customer" GridPane.columnIndex="1" GridPane.rowIndex="23" onAction="#updateCustomer"/>
+                  <Button fx:id="viewAppt" text="View/Create Appointments" GridPane.columnIndex="1" GridPane.rowIndex="24" onAction="#openApptMenu"/>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>
